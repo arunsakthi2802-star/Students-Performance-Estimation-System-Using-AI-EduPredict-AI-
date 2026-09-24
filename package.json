@@ -1,25 +1,30 @@
 {
-  "name": "students-performance-estimation-system-ai",
-  "version": "1.0.0",
-  "description": "Students Performance Estimation System Using AI - Developed for Nithyasri S",
-  "workspaces": [
-    "frontend"
-  ],
+  "name": "student-performance-ai",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "npm run dev --prefix frontend",
-    "build": "npm --prefix frontend install --include=dev && npm --prefix frontend run build",
-    "test:backend": "python -m pytest backend/tests/test_api.py -v",
-    "seed:mongo": "python backend/seed_mongodb.py",
-    "seed:sqlite": "python -m backend.seed_data"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "keywords": [
-    "education",
-    "machine-learning",
-    "fastapi",
-    "react",
-    "mongodb",
-    "scikit-learn"
-  ],
-  "author": "Nithyasri S",
-  "license": "MIT"
+  "dependencies": {
+    "@google/genai": "^2.24.0",
+    "lucide-react": "^1.48.0",
+    "mongoose": "^9.10.2",
+    "next": "16.3.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
 }
